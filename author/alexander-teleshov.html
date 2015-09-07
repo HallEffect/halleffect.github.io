@@ -89,6 +89,155 @@ HallEffect's notes            </a>
                 </div>
             </article>
             <hr/>
+            <article>
+                <h2><a href="/articles/preobrazovanie-stdvector-v-list-i-naoborot-c-ispolzovaniem-boostpython/">Преобразование std::vector в list и наоборот c использованием Boost.Python</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+    </span>
+
+
+
+        <span class="label label-default">Category</span>
+        <a href="/category/blog.html">Блог</a>
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/python.html">Python</a>
+        /
+	<a href="/tag/boost.html">Boost</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Конвертер для преобразования из std::vector в list</p>
+<div class="highlight"><pre><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">cppvector_to_list</span>
+<span class="p">{</span>
+    <span class="k">static</span> <span class="n">PyObject</span> <span class="o">*</span><span class="n">convert</span><span class="p">(</span> <span class="n">T</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">v</span> <span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">python</span><span class="o">::</span><span class="n">list</span> <span class="n">list</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span> <span class="k">auto</span> <span class="k">const</span> <span class="o">&amp;</span><span class="nl">it</span> <span class="p">:</span> <span class="n">v</span> <span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">list</span><span class="p">.</span><span class="n">append</span><span class="p">(</span> <span class="o">*</span><span class="n">it</span> <span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">incref</span><span class="p">(</span> <span class="n">list</span><span class="p">.</span><span class="n">ptr</span><span class="p">()</span> <span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<p>Конвертер для преобразования из list в std::vector</p>
+<div class="highlight"><pre><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="n">T</span> <span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">list_to_cppvector</span>
+<span class="p">{</span>
+    <span class="n">list_to_cppvector</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">converter ...</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="/articles/preobrazovanie-stdvector-v-list-i-naoborot-c-ispolzovaniem-boostpython/">Читать далее ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="/articles/sborka-boostpython-s-pomoshchiu-mingw/">Сборка Boost.python с помощью MinGW</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+    </span>
+
+
+
+        <span class="label label-default">Category</span>
+        <a href="/category/blog.html">Блог</a>
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/python.html">Python</a>
+        /
+	<a href="/tag/boost.html">Boost</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><ol>
+<li>Скачать <a href="http://www.boost.org/users/download/">архив с сайта</a></li>
+<li>Распаковать в <code>C:\</code></li>
+<li>Перейти в папку <code>C:\boost_1_xx_x</code></li>
+<li>Выполнить:</li>
+</ol>
+<div class="highlight"><pre>bootstrap.bat mingw
+b2 --build-type=complete --with-python stage
+</pre></div>
+
+
+<ol>
+<li>В папке <code>C:\boost_1_xx_x\stage\lib</code> будут лежать собранные <code>.dll</code><blockquote>
+<p>Расшифрофка имен файлов приведена <a href="http://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#library-naming">здесь</a></p>
+</blockquote>
+</li>
+</ol>
+<p>Для сборки x64 нужно использовать ключ <code>address-model=64</code></p>
+<div class="highlight"><pre>b2 --build-type=complete address-model=64 --with-python ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="/articles/sborka-boostpython-s-pomoshchiu-mingw/">Читать далее ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/">Шаблонный конструктор пользовательского класса исключения с переменным числом аргументов</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+    </span>
+
+
+
+        <span class="label label-default">Category</span>
+        <a href="/category/blog.html">Блог</a>
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/python.html">Python</a>
+        /
+	<a href="/tag/boost.html">Boost</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Author: Alexander Teleshov</p>
+<div class="highlight"><pre><span class="cp">#ifndef MYEXCEPTION_H_</span>
+<span class="cp">#define MYEXCEPTION_H_</span>
+
+<span class="cp">#include &lt;exception&gt;</span>
+<span class="cp">#include &lt;string&gt;</span>
+<span class="cp">#include &lt;sstream&gt;</span>
+<span class="cp">#include &lt;tuple&gt;</span>
+
+<span class="k">class</span> <span class="nc">MyException</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span>
+<span class="p">{</span>
+
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">MyException</span><span class="p">()</span><span class="o">:</span> <span class="n">m_msg</span><span class="p">(</span><span class="s">&quot;Ошибка&quot;</span><span class="p">)</span>
+    <span class="p">{</span>
+
+    <span class="p">}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="p">...</span><span class="n">Args</span><span class="o">&gt;</span> <span class="n">MyException</span><span class="p">(</span><span class="n">Args</span><span class="p">...</span> <span class="n">message</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_msg</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">auto</span> <span class="n">tp</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_tuple</span><span class="p">(</span><span class="n">message</span><span class="p">...);</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">ss</span><span class="p">;</span>
+        <span class="n">ss</span> <span class="o">&lt;&lt;</span> <span class="n">tp</span><span class="p">;</span>
+        <span class="n">m_msg</span> <span class="o">=</span> <span class="n">ss</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="o">~</span><span class="n">MyException</span><span class="p">()</span> <span class="k">throw</span><span class="p">()</span> <span class="p">{}</span>
+
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">what</span><span class="p">()</span> <span class="k">const ...</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/">Читать далее ...</a>
+                </div>
+            </article>
+            <hr/>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -101,6 +250,16 @@ HallEffect's notes            </a>
 
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/python.html">
+                            Python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="/tag/boost.html">
+                            Boost
+                        </a>
+                    </li>
                     <li class="list-group-item tag-4">
                         <a href="/tag/sometag.html">
                             sometag
