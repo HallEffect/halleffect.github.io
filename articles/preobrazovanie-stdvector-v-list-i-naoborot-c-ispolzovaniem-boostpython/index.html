@@ -89,7 +89,7 @@ HallEffect's notes            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00"> Ср. 13 Май 2015</time>
     </span>
 
 
@@ -113,7 +113,7 @@ HallEffect's notes            </a>
     <span class="p">{</span>
         <span class="n">boost</span><span class="o">::</span><span class="n">python</span><span class="o">::</span><span class="n">list</span> <span class="n">list</span><span class="p">;</span>
 
-        <span class="k">for</span> <span class="p">(</span> <span class="k">auto</span> <span class="k">const</span> <span class="o">&amp;</span><span class="nl">it</span> <span class="p">:</span> <span class="n">v</span> <span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span> <span class="k">auto</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">it</span> <span class="o">:</span> <span class="n">v</span> <span class="p">)</span>
         <span class="p">{</span>
             <span class="n">list</span><span class="p">.</span><span class="n">append</span><span class="p">(</span> <span class="o">*</span><span class="n">it</span> <span class="p">);</span>
         <span class="p">}</span>
@@ -140,7 +140,7 @@ HallEffect's notes            </a>
 
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="o">*</span><span class="n">list_to_cppvector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">convertible</span><span class="p">(</span> <span class="n">PyObject</span> <span class="o">*</span><span class="n">obj</span> <span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">return</span> <span class="n">PyList_Check</span><span class="p">(</span> <span class="n">obj</span> <span class="p">)</span> <span class="o">?</span> <span class="nl">obj</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">PyList_Check</span><span class="p">(</span> <span class="n">obj</span> <span class="p">)</span> <span class="o">?</span> <span class="n">obj</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 
 
@@ -168,14 +168,14 @@ HallEffect's notes            </a>
 
 
 <p>Региструрем конвертеры для нужных типов:</p>
-<div class="highlight"><pre><span class="nt">to_python_converter</span><span class="o">&lt;</span> <span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">unsigned</span> <span class="nt">short</span><span class="o">&gt;</span> <span class="o">,</span> 
-                     <span class="nt">cppvector_to_list</span><span class="o">&lt;</span><span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">unsigned</span> <span class="nt">short</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;();</span>
+<div class="highlight"><pre><span class="nx">to_python_converter</span><span class="o">&lt;</span> <span class="nx">std</span><span class="p">::</span><span class="nl">vector</span><span class="o">&lt;</span><span class="nx">unsigned</span> <span class="nx">short</span><span class="o">&gt;</span> <span class="p">,</span> 
+                     <span class="nx">cppvector_to_list</span><span class="o">&lt;</span><span class="nx">std</span><span class="p">::</span><span class="nl">vector</span><span class="o">&lt;</span><span class="nx">unsigned</span> <span class="nx">short</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;</span><span class="p">();</span>
 
-<span class="nt">to_python_converter</span><span class="o">&lt;</span> <span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">double</span><span class="o">&gt;</span> <span class="o">,</span> 
-                     <span class="nt">cppvector_to_list</span><span class="o">&lt;</span><span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;();</span>
+<span class="nx">to_python_converter</span><span class="o">&lt;</span> <span class="nx">std</span><span class="p">::</span><span class="nl">vector</span><span class="o">&lt;</span><span class="nx">double</span><span class="o">&gt;</span> <span class="p">,</span> 
+                     <span class="nx">cppvector_to_list</span><span class="o">&lt;</span><span class="nx">std</span><span class="p">::</span><span class="nl">vector</span><span class="o">&lt;</span><span class="nx">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;</span><span class="p">();</span>
 
-<span class="nt">list_to_cppvector</span><span class="o">&lt;</span> <span class="nt">unsigned</span> <span class="nt">short</span> <span class="o">&gt;();</span>
-<span class="nt">list_to_cppvector</span><span class="o">&lt;</span> <span class="nt">double</span> <span class="o">&gt;();</span>    
+<span class="nx">list_to_cppvector</span><span class="o">&lt;</span> <span class="nx">unsigned</span> <span class="nx">short</span> <span class="o">&gt;</span><span class="p">();</span>
+<span class="nx">list_to_cppvector</span><span class="o">&lt;</span> <span class="nx">double</span> <span class="o">&gt;</span><span class="p">();</span>    
 </pre></div>
             </div>
             <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,moimir,lj,gplus"></div>

@@ -13,13 +13,13 @@
 
         <meta name="author" content="Alexander Teleshov" />
         <meta name="keywords" content="Python,Boost" />
-        <meta name="description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифрофка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 --build-type=complete address-model=64 --with-python ..." />
+        <meta name="description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифрофка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 --build-type=complete ..." />
 
         <meta property="og:site_name" content="HallEffect's notes" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Сборка Boost.python с помощью MinGW"/>
         <meta property="og:url" content="/articles/sborka-boostpython-s-pomoshchiu-mingw/"/>
-        <meta property="og:description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифрофка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 --build-type=complete address-model=64 --with-python ..."/>
+        <meta property="og:description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифрофка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 --build-type=complete ..."/>
         <meta property="article:published_time" content="2015-05-13" />
             <meta property="article:section" content="Блог" />
             <meta property="article:tag" content="Python" />
@@ -89,7 +89,7 @@ HallEffect's notes            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00"> Ср. 13 Май 2015</time>
     </span>
 
 
@@ -111,8 +111,8 @@ HallEffect's notes            </a>
 <li>Перейти в папку <code>C:\boost_1_xx_x</code></li>
 <li>Выполнить:</li>
 </ol>
-<div class="highlight"><pre>bootstrap.bat mingw
-b2 --build-type=complete --with-python stage
+<div class="highlight"><pre><span class="n">bootstrap</span><span class="p">.</span><span class="n">bat</span> <span class="n">mingw</span>
+<span class="n">b2</span> <span class="o">--</span><span class="n">build</span><span class="o">-</span><span class="n">type</span><span class="o">=</span><span class="n">complete</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">python</span> <span class="n">stage</span>
 </pre></div>
 
 
@@ -123,7 +123,7 @@ b2 --build-type=complete --with-python stage
 </li>
 </ol>
 <p>Для сборки x64 нужно использовать ключ <code>address-model=64</code></p>
-<div class="highlight"><pre>b2 --build-type=complete address-model=64 --with-python stage
+<div class="highlight"><pre><span class="n">b2</span> <span class="o">--</span><span class="n">build</span><span class="o">-</span><span class="n">type</span><span class="o">=</span><span class="n">complete</span> <span class="n">address</span><span class="o">-</span><span class="n">model</span><span class="o">=</span><span class="mi">64</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">python</span> <span class="n">stage</span>
 </pre></div>
 
 
@@ -131,7 +131,7 @@ b2 --build-type=complete --with-python stage
 <p>Сборку Boost.Python x64 нужно делать если установлен Python x64</p>
 </blockquote>
 <p>Для сборки библиотеки с использованием с++11 используется ключевое слово <code>cxxflags="-std=c++11"</code></p>
-<div class="highlight"><pre>b2 cxxflags=&quot;-std=c++11&quot; --build-type=complete  --with-python stage
+<div class="highlight"><pre><span class="n">b2</span> <span class="n">cxxflags</span><span class="o">=</span><span class="s">&quot;-std=c++11&quot;</span> <span class="o">--</span><span class="n">build</span><span class="o">-</span><span class="n">type</span><span class="o">=</span><span class="n">complete</span>  <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">python</span> <span class="n">stage</span>
 </pre></div>
 
 

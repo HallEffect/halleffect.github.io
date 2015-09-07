@@ -71,7 +71,7 @@ HallEffect's notes            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-16T00:00:00+03:00"> Сб. 16 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-16T00:00:00"> Сб. 16 Май 2015</time>
     </span>
 
 
@@ -95,7 +95,7 @@ HallEffect's notes            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00"> Ср. 13 Май 2015</time>
     </span>
 
 
@@ -118,7 +118,7 @@ HallEffect's notes            </a>
     <span class="p">{</span>
         <span class="n">boost</span><span class="o">::</span><span class="n">python</span><span class="o">::</span><span class="n">list</span> <span class="n">list</span><span class="p">;</span>
 
-        <span class="k">for</span> <span class="p">(</span> <span class="k">auto</span> <span class="k">const</span> <span class="o">&amp;</span><span class="nl">it</span> <span class="p">:</span> <span class="n">v</span> <span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span> <span class="k">auto</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">it</span> <span class="o">:</span> <span class="n">v</span> <span class="p">)</span>
         <span class="p">{</span>
             <span class="n">list</span><span class="p">.</span><span class="n">append</span><span class="p">(</span> <span class="o">*</span><span class="n">it</span> <span class="p">);</span>
         <span class="p">}</span>
@@ -146,7 +146,7 @@ HallEffect's notes            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00"> Ср. 13 Май 2015</time>
     </span>
 
 
@@ -167,8 +167,8 @@ HallEffect's notes            </a>
 <li>Перейти в папку <code>C:\boost_1_xx_x</code></li>
 <li>Выполнить:</li>
 </ol>
-<div class="highlight"><pre>bootstrap.bat mingw
-b2 --build-type=complete --with-python stage
+<div class="highlight"><pre><span class="n">bootstrap</span><span class="p">.</span><span class="n">bat</span> <span class="n">mingw</span>
+<span class="n">b2</span> <span class="o">--</span><span class="n">build</span><span class="o">-</span><span class="n">type</span><span class="o">=</span><span class="n">complete</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">python</span> <span class="n">stage</span>
 </pre></div>
 
 
@@ -179,7 +179,7 @@ b2 --build-type=complete --with-python stage
 </li>
 </ol>
 <p>Для сборки x64 нужно использовать ключ <code>address-model=64</code></p>
-<div class="highlight"><pre>b2 --build-type=complete address-model=64 --with-python ...</pre></div>
+<div class="highlight"><pre><span class="n">b2</span> <span class="o">--</span><span class="n">build</span><span class="o">-</span><span class="n">type</span><span class="o">=</span><span class="n">complete ...</span></pre></div>
                     <a class="btn btn-default btn-xs" href="/articles/sborka-boostpython-s-pomoshchiu-mingw/">Читать далее ...</a>
                 </div>
             </article>
@@ -190,7 +190,7 @@ b2 --build-type=complete --with-python stage
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00"> Ср. 13 Май 2015</time>
     </span>
 
 
@@ -217,7 +217,7 @@ b2 --build-type=complete --with-python stage
 <span class="k">class</span> <span class="nc">MyException</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span>
 <span class="p">{</span>
 
-<span class="k">public</span><span class="o">:</span>
+<span class="nl">public:</span>
     <span class="n">MyException</span><span class="p">()</span><span class="o">:</span> <span class="n">m_msg</span><span class="p">(</span><span class="s">&quot;Ошибка&quot;</span><span class="p">)</span>
     <span class="p">{</span>
 
