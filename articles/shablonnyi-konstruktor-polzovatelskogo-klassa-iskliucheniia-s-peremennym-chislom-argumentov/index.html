@@ -87,15 +87,12 @@ HallEffect's notes            </a>
                 <div class="panel">
                     <div class="panel-body">
 <footer class="post-info">
-    <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
     </span>
 
 
 
-        <span class="label label-default">Category</span>
-        <a href="/category/blog.html">Блог</a>
 
 
 <span class="label label-default">Tags</span>
@@ -117,7 +114,7 @@ HallEffect's notes            </a>
 <span class="k">class</span> <span class="nc">MyException</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span>
 <span class="p">{</span>
 
-<span class="nl">public:</span>
+<span class="k">public</span><span class="o">:</span>
     <span class="n">MyException</span><span class="p">()</span><span class="o">:</span> <span class="n">m_msg</span><span class="p">(</span><span class="s">&quot;Ошибка&quot;</span><span class="p">)</span>
     <span class="p">{</span>
 
@@ -135,7 +132,7 @@ HallEffect's notes            </a>
 
     <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">what</span><span class="p">()</span> <span class="k">const</span> <span class="k">throw</span><span class="p">();</span>
 
-<span class="nl">private:</span>
+<span class="k">private</span><span class="o">:</span>
     <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">m_msg</span><span class="p">;</span>
 
 <span class="p">};</span> <span class="c1">// end of class MyException : public std::exception</span>
@@ -236,21 +233,6 @@ HallEffect's notes            </a>
 
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/python.html">
-                            Python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/boost.html">
-                            Boost
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="/tag/sometag.html">
-                            sometag
-                        </a>
-                    </li>
                 </ul>
             </li>
 
@@ -265,11 +247,10 @@ HallEffect's notes            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2015 Alexander Teleshov
-            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+         <div class="col-xs-10">
+         Сайт работает на <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> и живёт на GitHub   
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Наверх</a></p></div>
       </div>
    </div>
 </footer>

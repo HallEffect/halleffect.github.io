@@ -1423,7 +1423,7 @@ img{
 }
 
 hr{
-	margin-top:21px;
+	margin-top:50px;
 	margin-bottom:21px;
 	border:0;
 	border-top:1px solid #ecf0f1
@@ -1433,7 +1433,7 @@ hr{
 	position:absolute;
 	width:1px;
 	height:1px;
-	margin:-1px;
+	margin:-1px; 
 	padding:0;
 	overflow:hidden;
 	clip:rect(0, 0, 0, 0);
@@ -5778,6 +5778,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 
 .panel-body{
 	padding:15px
+	padding-left:0px;
 }
 
 .panel-heading{
@@ -6132,6 +6133,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 
 .well-sm{
 	padding:9px;
+	padding-left:0px;
 	border-radius:3px
 }
 
