@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Сборка Boost.python с помощью MinGW - HallEffect's notes</title>
+    <title>Сборка Boost.python с помощью MinGW - HallEffect's notes</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -13,13 +13,13 @@
 
         <meta name="author" content="Alexander Teleshov" />
         <meta name="keywords" content="Python,Boost" />
-        <meta name="description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифрофка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 --build-type=complete address-model=64 --with-python ..." />
+        <meta name="description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифровка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 toolset=gcc --build-type=complete address-model ..." />
 
         <meta property="og:site_name" content="HallEffect's notes" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Сборка Boost.python с помощью MinGW"/>
+        <meta property="og:title" content="Сборка Boost.python с помощью MinGW"/>
         <meta property="og:url" content="/articles/sborka-boostpython-s-pomoshchiu-mingw/"/>
-        <meta property="og:description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифрофка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 --build-type=complete address-model=64 --with-python ..."/>
+        <meta property="og:description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифровка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 toolset=gcc --build-type=complete address-model ..."/>
         <meta property="article:published_time" content="2015-05-13" />
             <meta property="article:section" content="Блог" />
             <meta property="article:tag" content="Python" />
@@ -32,6 +32,7 @@
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/monokai.css" rel="stylesheet">
+        <link href="/theme/css/typogrify.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
 
 
@@ -78,8 +79,8 @@ HallEffect's notes            </a>
                 <h1>
                     <a href="/articles/sborka-boostpython-s-pomoshchiu-mingw/"
                        rel="bookmark"
-                       title="Permalink to Сборка Boost.python с помощью MinGW">
-                        Сборка Boost.python с помощью MinGW
+                       title="Permalink to Сборка Boost.python с помощью MinGW">
+                        Сборка Boost.python с помощью&nbsp;MinGW
                     </a>
                 </h1>
             </header>
@@ -88,11 +89,8 @@ HallEffect's notes            </a>
                     <div class="panel-body">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Wed 13 May 2015</time>
     </span>
-
-
-
 
 
 <span class="label label-default">Tags</span>
@@ -103,37 +101,32 @@ HallEffect's notes            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <ol>
-<li>Скачать <a href="http://www.boost.org/users/download/">архив с сайта</a></li>
+<li>Скачать <a href="http://www.boost.org/users/download/">архив с&nbsp;сайта</a></li>
 <li>Распаковать в <code>C:\</code></li>
 <li>Перейти в папку <code>C:\boost_1_xx_x</code></li>
-<li>Выполнить:</li>
-</ol>
-<div class="highlight"><pre>bootstrap.bat mingw
-b2 --build-type=complete --with-python stage
-</pre></div>
-
-
-<ol>
+<li>Выполнить:
+    <code>bootstrap.bat mingw
+    b2 --build-type=complete --with-python stage</code></li>
 <li>В папке <code>C:\boost_1_xx_x\stage\lib</code> будут лежать собранные <code>.dll</code><blockquote>
-<p>Расшифрофка имен файлов приведена <a href="http://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#library-naming">здесь</a></p>
+<p>Расшифровка имен файлов приведена <a href="http://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#library-naming">здесь</a></p>
 </blockquote>
 </li>
 </ol>
 <p>Для сборки x64 нужно использовать ключ <code>address-model=64</code></p>
-<div class="highlight"><pre>b2 --build-type=complete address-model=64 --with-python stage
+<div class="highlight"><pre><span></span>b2 toolset=gcc --build-type=complete address-model=64 --with-python stage
 </pre></div>
 
 
 <blockquote>
-<p>Сборку Boost.Python x64 нужно делать если установлен Python x64</p>
+<p>Сборку Boost.Python x64 нужно делать если установлен Python&nbsp;x64</p>
 </blockquote>
-<p>Для сборки библиотеки с использованием с++11 используется ключевое слово <code>cxxflags="-std=c++11"</code></p>
-<div class="highlight"><pre>b2 cxxflags=&quot;-std=c++11&quot; --build-type=complete  --with-python stage
+<p>Для сборки библиотеки с использованием C++11 используется ключевое слово <code>cxxflags="-std=c++11"</code></p>
+<div class="highlight"><pre><span></span>b2 toolset=gcc cxxflags=&quot;-std=c++11&quot; --build-type=complete  --with-python stage
 </pre></div>
 
 
-<p>Для ускорения сборки можно добавить ключ <code>-j n</code>, где <code>n</code> - число ядер на машине.</p>
-<p>Если изменилась версия компилятора, библиотеку надо пересобирать</p>
+<p>Для ускорения сборки можно добавить ключ <code>-j n</code>, где <code>n</code> - число ядер на&nbsp;машине.</p>
+<p>Если изменилась версия компилятора, библиотеку надо&nbsp;пересобирать</p>
             </div>
             <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,moimir,lj,gplus"></div>
             <!-- /.entry-content -->
@@ -209,10 +202,11 @@ b2 --build-type=complete --with-python stage
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">
-         Сайт работает на <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> и живёт на GitHub   
-         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Наверх</a></p></div>
+         <div class="col-xs-10">&copy; 2015 Alexander Teleshov
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
       </div>
    </div>
 </footer>

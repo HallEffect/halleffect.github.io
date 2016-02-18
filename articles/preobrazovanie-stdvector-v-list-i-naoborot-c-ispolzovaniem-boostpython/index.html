@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Преобразование std::vector в list и наоборот c использованием Boost.Python - HallEffect's notes</title>
+    <title>Преобразование std::vector в list и наоборот c использованием Boost.Python - HallEffect's notes</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -13,13 +13,13 @@
 
         <meta name="author" content="Alexander Teleshov" />
         <meta name="keywords" content="Python,Boost" />
-        <meta name="description" content="Конвертер для преобразования из std::vector в list template&lt;typename T&gt; struct cppvector_to_list { static PyObject *convert( T const &amp;v ) { boost::python::list list; for ( auto const &amp;it : v ) { list.append( *it ); } return incref( list.ptr() ); } }; Конвертер для преобразования из list в std::vector template&lt; typename T &gt; struct list_to_cppvector { list_to_cppvector() { converter ..." />
+        <meta name="description" content="Конвертер для преобразования из std::vector в list template&lt;typename T&gt; struct cppvector_to_list { static PyObject *convert( T const &amp;v ) { boost::python::list list; for ( auto const &amp;it : v ) { list.append( *it ); } return incref( list.ptr() ); } }; Конвертер для преобразования из list в std::vector template&lt; typename T &gt; struct list_to_cppvector { list_to_cppvector() { converter ..." />
 
         <meta property="og:site_name" content="HallEffect's notes" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Преобразование std::vector в list и наоборот c использованием Boost.Python"/>
+        <meta property="og:title" content="Преобразование std::vector в list и наоборот c использованием Boost.Python"/>
         <meta property="og:url" content="/articles/preobrazovanie-stdvector-v-list-i-naoborot-c-ispolzovaniem-boostpython/"/>
-        <meta property="og:description" content="Конвертер для преобразования из std::vector в list template&lt;typename T&gt; struct cppvector_to_list { static PyObject *convert( T const &amp;v ) { boost::python::list list; for ( auto const &amp;it : v ) { list.append( *it ); } return incref( list.ptr() ); } }; Конвертер для преобразования из list в std::vector template&lt; typename T &gt; struct list_to_cppvector { list_to_cppvector() { converter ..."/>
+        <meta property="og:description" content="Конвертер для преобразования из std::vector в list template&lt;typename T&gt; struct cppvector_to_list { static PyObject *convert( T const &amp;v ) { boost::python::list list; for ( auto const &amp;it : v ) { list.append( *it ); } return incref( list.ptr() ); } }; Конвертер для преобразования из list в std::vector template&lt; typename T &gt; struct list_to_cppvector { list_to_cppvector() { converter ..."/>
         <meta property="article:published_time" content="2015-05-13" />
             <meta property="article:section" content="Блог" />
             <meta property="article:tag" content="Python" />
@@ -32,6 +32,7 @@
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/monokai.css" rel="stylesheet">
+        <link href="/theme/css/typogrify.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
 
 
@@ -78,8 +79,8 @@ HallEffect's notes            </a>
                 <h1>
                     <a href="/articles/preobrazovanie-stdvector-v-list-i-naoborot-c-ispolzovaniem-boostpython/"
                        rel="bookmark"
-                       title="Permalink to Преобразование std::vector в list и наоборот c использованием Boost.Python">
-                        Преобразование std::vector в list и наоборот c использованием Boost.Python
+                       title="Permalink to Преобразование std::vector в list и наоборот c использованием Boost.Python">
+                        Преобразование std::vector в list и наоборот c использованием&nbsp;Boost.Python
                     </a>
                 </h1>
             </header>
@@ -88,11 +89,8 @@ HallEffect's notes            </a>
                     <div class="panel-body">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср. 13 Май 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Wed 13 May 2015</time>
     </span>
-
-
-
 
 
 <span class="label label-default">Tags</span>
@@ -102,8 +100,8 @@ HallEffect's notes            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Конвертер для преобразования из std::vector в list</p>
-<div class="highlight"><pre><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+                <p>Конвертер для преобразования из std::vector в&nbsp;list</p>
+<div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
 <span class="k">struct</span> <span class="n">cppvector_to_list</span>
 <span class="p">{</span>
     <span class="k">static</span> <span class="n">PyObject</span> <span class="o">*</span><span class="n">convert</span><span class="p">(</span> <span class="n">T</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">v</span> <span class="p">)</span>
@@ -121,8 +119,8 @@ HallEffect's notes            </a>
 </pre></div>
 
 
-<p>Конвертер для преобразования из list в std::vector</p>
-<div class="highlight"><pre><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="n">T</span> <span class="o">&gt;</span>
+<p>Конвертер для преобразования из list в&nbsp;std::vector</p>
+<div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="n">T</span> <span class="o">&gt;</span>
 <span class="k">struct</span> <span class="n">list_to_cppvector</span>
 <span class="p">{</span>
     <span class="n">list_to_cppvector</span><span class="p">()</span>
@@ -164,8 +162,8 @@ HallEffect's notes            </a>
 </pre></div>
 
 
-<p>Региструрем конвертеры для нужных типов:</p>
-<div class="highlight"><pre><span class="nt">to_python_converter</span><span class="o">&lt;</span> <span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">unsigned</span> <span class="nt">short</span><span class="o">&gt;</span> <span class="o">,</span> 
+<p>Региструрем конвертеры для нужных&nbsp;типов:</p>
+<div class="highlight"><pre><span></span><span class="nt">to_python_converter</span><span class="o">&lt;</span> <span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">unsigned</span> <span class="nt">short</span><span class="o">&gt;</span> <span class="o">,</span> 
                      <span class="nt">cppvector_to_list</span><span class="o">&lt;</span><span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">unsigned</span> <span class="nt">short</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;();</span>
 
 <span class="nt">to_python_converter</span><span class="o">&lt;</span> <span class="nt">std</span><span class="o">:</span><span class="nd">:vector</span><span class="o">&lt;</span><span class="nt">double</span><span class="o">&gt;</span> <span class="o">,</span> 
@@ -249,10 +247,11 @@ HallEffect's notes            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">
-         Сайт работает на <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> и живёт на GitHub   
-         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Наверх</a></p></div>
+         <div class="col-xs-10">&copy; 2015 Alexander Teleshov
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
       </div>
    </div>
 </footer>
