@@ -7,10 +7,10 @@ Category: Блог
 2. Распаковать в `C:\`
 3. Перейти в папку `C:\boost_1_xx_x`
 4. Выполнить:
-    ```
+```
     bootstrap.bat mingw
     b2 --build-type=complete --with-python stage
-    ```
+```
 5. В папке `C:\boost_1_xx_x\stage\lib` будут лежать собранные `.dll`
 >Расшифровка имен файлов приведена [здесь](http://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#library-naming)
 
