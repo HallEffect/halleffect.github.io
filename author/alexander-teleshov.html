@@ -144,23 +144,23 @@ HallEffect's notes            </a>
 	<a href="/tag/boost.html">Boost</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><ol>
+                <div class="summary"><ul>
 <li>Скачать <a href="http://www.boost.org/users/download/">архив с&nbsp;сайта</a></li>
 <li>Распаковать в <code>C:\</code></li>
 <li>Перейти в папку <code>C:\boost_1_xx_x</code></li>
 <li>Выполнить:</li>
-</ol>
+</ul>
 <div class="highlight"><pre><span></span>    bootstrap.bat mingw
     b2 --build-type=complete --with-python stage
 </pre></div>
 
 
-<ol>
+<ul>
 <li>В папке <code>C:\boost_1_xx_x\stage\lib</code> будут лежать собранные <code>.dll</code><blockquote>
 <p>Расшифровка имен файлов приведена <a href="http://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#library-naming">здесь</a></p>
 </blockquote>
 </li>
-</ol>
+</ul>
 <p>Для сборки x64 нужно использовать ключ <code>address-model=64</code></p>
 <div class="highlight"><pre><span></span>b2 toolset=gcc --build-type=complete address-model ...</pre></div>
                     <a class="btn btn-default btn-xs" href="/articles/sborka-boostpython-s-pomoshchiu-mingw/">Читать далее ...</a>

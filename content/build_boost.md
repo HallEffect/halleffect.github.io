@@ -3,15 +3,15 @@ Date: 2015-05-13
 Tags: Python, Boost
 Category: Блог
 
-1. Скачать [архив с сайта](http://www.boost.org/users/download/)
-2. Распаковать в `C:\`
-3. Перейти в папку `C:\boost_1_xx_x`
-4. Выполнить:
+- Скачать [архив с сайта](http://www.boost.org/users/download/)
+- Распаковать в `C:\`
+- Перейти в папку `C:\boost_1_xx_x`
+- Выполнить:
 ```
     bootstrap.bat mingw
     b2 --build-type=complete --with-python stage
 ```
-5. В папке `C:\boost_1_xx_x\stage\lib` будут лежать собранные `.dll`
+- В папке `C:\boost_1_xx_x\stage\lib` будут лежать собранные `.dll`
 >Расшифровка имен файлов приведена [здесь](http://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#library-naming)
 
 Для сборки x64 нужно использовать ключ `address-model=64`
