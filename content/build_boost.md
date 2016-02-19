@@ -29,3 +29,15 @@ b2 toolset=gcc cxxflags="-std=c++11" --build-type=complete  --with-python stage
 
 Если изменилась версия компилятора, библиотеку надо пересобирать
 
+Если при сборке Boost.python на компьютере установлен `Python 2.7.10 x32` (на x64 не проверялось), то могут появиться следующие ошибки:
+```
+C:\Python27\libs/libpython27.a(dmmes01026.o):(.idata$7+0x0): undefined reference to `_head_C__build27_cpython_PCBuild_libpython27_a'
+C:\Python27\libs/libpython27.a(dmmes00220.o):(.idata$7+0x0): undefined reference to `_head_C__build27_cpython_PCBuild_libpython27_a'
+C:\Python27\libs/libpython27.a(dmmes00363.o):(.idata$7+0x0): undefined reference to `_head_C__build27_cpython_PCBuild_libpython27_a'
+C:\Python27\libs/libpython27.a(dmmes00386.o):(.idata$7+0x0): undefined reference to `_head_C__build27_cpython_PCBuild_libpython27_a'
+C:\Python27\libs/libpython27.a(dmmes00136.o):(.idata$7+0x0): undefined reference to `_head_C__build27_cpython_PCBuild_libpython27_a'
+C:\Python27\libs/libpython27.a(dmmes00705.o):(.idata$7+0x0): more undefined references to `_head_C__build27_cpython_PCBuild_libpython27_a' follow 
+
+collect2.exe: error: ld returned 1 exit status
+```
+Проблема в файле `C:\Python27\libs\libpython27.a`. Файл можно взять из предыдущей версии `Python 2.7.9` или обновиться до `2.7.11`
