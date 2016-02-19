@@ -1,5 +1,6 @@
 /*@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");*/
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic-ext,cyrillic,latin-ext");
+/*@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic-ext,cyrillic,latin-ext");*/
+@import url(https://fonts.googleapis.com/css?family=Andika&subset=latin,cyrillic-ext,latin-ext,cyrillic);
 /*!
  * bootswatch v3.3.4+1
  * Homepage: http://bootswatch.com
@@ -1361,7 +1362,7 @@ html{
 
 body{
 	/*font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;*/
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Andika', sans-serif;
 	font-size:17px;
 	line-height:1.42857143;
 	color:#0C1218;
