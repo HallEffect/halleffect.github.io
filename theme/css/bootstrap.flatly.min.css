@@ -1356,8 +1356,11 @@ html{
 	-webkit-tap-highlight-color:rgba(0,0,0,0)
 }
 
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
 body{
-	font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	/*font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-family: 'PT Sans', sans-serif;
 	font-size:17px;
 	line-height:1.42857143;
 	color:#0C1218;
@@ -1731,7 +1734,8 @@ abbr[title],abbr[data-original-title]{
 blockquote{
 	padding:10.5px 21px;
 	margin:0 0 21px;
-	font-size:18.75px;
+	font-size:16.75px;
+	font-style: italic;
 	border-left:5px solid #ecf0f1;
 	margin: 10px;
 }
