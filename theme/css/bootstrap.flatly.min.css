@@ -1,6 +1,5 @@
-/*@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");*/
-/*@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic-ext,cyrillic,latin-ext");*/
-@import url(https://fonts.googleapis.com/css?family=Andika&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700italic,700,400italic,400&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext);
 /*!
  * bootswatch v3.3.4+1
  * Homepage: http://bootswatch.com
@@ -1361,8 +1360,7 @@ html{
 
 
 body{
-	/*font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;*/
-	font-family: 'Andika', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size:17px;
 	line-height:1.42857143;
 	color:#0C1218;
@@ -1459,7 +1457,8 @@ hr{
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-	font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	/*font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-family: 'Roboto Condensed', sans-serif;
 	font-weight:400;
 	line-height:1.1;
 	color:inherit
