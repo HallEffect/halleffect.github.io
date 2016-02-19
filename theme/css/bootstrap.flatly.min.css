@@ -1371,12 +1371,12 @@ input,button,select,textarea{
 }
 
 a{
-	color:#18bc9c;
-	text-decoration:none
+	color:#0f5b84;
+	/*text-decoration:none*/
 }
 
 a:hover,a:focus{
-	color:#18bc9c;
+	color:#780b0b;
 	text-decoration:underline
 }
 
@@ -1779,7 +1779,7 @@ code,kbd,pre,samp{
 
 code{
 	padding:2px 4px;
-	font-size:90%;
+	/*font-size:90%;*/
 	color:#531616;
 	background-color:#ECECEC;
 	border-radius:4px
@@ -1813,8 +1813,8 @@ pre{
 	word-wrap:break-word;
 	color:#7b8a8b;
 	background-color:#ecf0f1;
-	border:1px solid #cccccc;
-	border-radius:10px
+	/*border:1px solid #cccccc;*/
+	border-radius:8px
 }
 
 pre code{
@@ -4793,7 +4793,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{
-	color:#18bc9c;
+	color:#fff;
 	background-color:transparent
 }
 
@@ -4806,7 +4806,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 
 .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{
-	color:#18bc9c;
+	/*color:#18bc9c;*/
 	background-color:transparent
 }
 
