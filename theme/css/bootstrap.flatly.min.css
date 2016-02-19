@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:700italic,700,400italic,400&subset=cyrillic-ext);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic-ext);
 /*!
  * bootswatch v3.3.4+1
  * Homepage: http://bootswatch.com
@@ -1361,9 +1362,9 @@ html{
 
 body{
 	font-family: 'PT Sans', sans-serif;
-	font-size:17px;
+	font-size:18px;
 	line-height:1.42857143;
-	color:#0C1218;
+	color:#000;
 	background-color:#ffffff
 }
 
@@ -1779,7 +1780,8 @@ address{
 }
 
 code,kbd,pre,samp{
-	font-family:monospace;
+	/*font-family:monospace;*/
+	font-family: 'Roboto Mono', ;
 }
 
 code{
