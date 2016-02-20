@@ -13,13 +13,13 @@
 
         <meta name="author" content="Alexander Teleshov" />
         <meta name="keywords" content="Python,Boost" />
-        <meta name="description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифровка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 toolset=gcc --build-type=complete address-model ..." />
+        <meta name="description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 toolset=gcc --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифровка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 toolset=gcc --build-type ..." />
 
         <meta property="og:site_name" content="HallEffect's notes" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Сборка Boost.python с помощью MinGW"/>
         <meta property="og:url" content="/articles/sborka-boostpython-s-pomoshchiu-mingw/"/>
-        <meta property="og:description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифровка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 toolset=gcc --build-type=complete address-model ..."/>
+        <meta property="og:description" content="Скачать архив с сайта Распаковать в C:\ Перейти в папку C:\boost_1_xx_x Выполнить: bootstrap.bat mingw b2 toolset=gcc --build-type=complete --with-python stage В папке C:\boost_1_xx_x\stage\lib будут лежать собранные .dll Расшифровка имен файлов приведена здесь Для сборки x64 нужно использовать ключ address-model=64 b2 toolset=gcc --build-type ..."/>
         <meta property="article:published_time" content="2015-05-13" />
             <meta property="article:section" content="Блог" />
             <meta property="article:tag" content="Python" />
@@ -106,8 +106,8 @@ HallEffect's notes            </a>
 <li>Перейти в папку <code>C:\boost_1_xx_x</code></li>
 <li>Выполнить:</li>
 </ul>
-<div class="highlight"><pre><span></span>    bootstrap.bat mingw
-    b2 --build-type=complete --with-python stage
+<div class="highlight"><pre><span></span>bootstrap.bat mingw
+b2 toolset=gcc --build-type=complete --with-python stage
 </pre></div>
 
 

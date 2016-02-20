@@ -114,8 +114,8 @@ HallEffect's notes            </a>
 <li>Перейти в папку <code>C:\boost_1_xx_x</code></li>
 <li>Выполнить:</li>
 </ul>
-<div class="highlight"><pre><span></span>    bootstrap.bat mingw
-    b2 --build-type=complete --with-python stage
+<div class="highlight"><pre><span></span>bootstrap.bat mingw
+b2 toolset=gcc --build-type=complete --with-python stage
 </pre></div>
 
 
@@ -126,7 +126,7 @@ HallEffect's notes            </a>
 </li>
 </ul>
 <p>Для сборки x64 нужно использовать ключ <code>address-model=64</code></p>
-<div class="highlight"><pre><span></span>b2 toolset=gcc --build-type=complete address-model ...</pre></div>
+<div class="highlight"><pre><span></span>b2 toolset=gcc --build-type ...</pre></div>
                     <a class="btn btn-default btn-xs" href="/articles/sborka-boostpython-s-pomoshchiu-mingw/">Читать далее ...</a>
                 </div>
             </article>
