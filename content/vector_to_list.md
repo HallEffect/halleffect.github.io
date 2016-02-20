@@ -2,7 +2,7 @@ Title: Преобразование std::vector в list и наоборот c и
 Date: 2015-05-13
 Tags: Python, Boost
 Category: Блог
-Author: Alexander Teleshov
+Status: draft
 
 Конвертер для преобразования из std::vector в list
 ```cpp

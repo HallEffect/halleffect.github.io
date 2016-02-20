@@ -9,7 +9,7 @@
 
 
 
-<link rel="canonical" href="/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/">
+<link rel="canonical" href="../../articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/">
 
         <meta name="author" content="Alexander Teleshov" />
         <meta name="keywords" content="Python,Boost" />
@@ -18,7 +18,7 @@
         <meta property="og:site_name" content="HallEffect's notes" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Шаблонный конструктор пользовательского класса исключения с переменным числом аргументов"/>
-        <meta property="og:url" content="/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/"/>
+        <meta property="og:url" content="../../articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/"/>
         <meta property="og:description" content="Author: Alexander Teleshov #ifndef MYEXCEPTION_H_ #define MYEXCEPTION_H_ #include &lt;exception&gt; #include &lt;string&gt; #include &lt;sstream&gt; #include &lt;tuple&gt; class MyException : public std::exception { public: MyException(): m_msg(&#34;Ошибка&#34;) { } template &lt;typename ...Args&gt; MyException(Args... message) : m_msg(&#34;&#34;) { auto tp = std::make_tuple(message...); std::stringstream ss; ss &lt;&lt; tp; m_msg = ss.str(); } ~MyException() throw() {} const char *what() const ..."/>
         <meta property="article:published_time" content="2015-05-13" />
             <meta property="article:section" content="Блог" />
@@ -28,12 +28,12 @@
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
-    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="../../theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/theme/css/pygments/monokai.css" rel="stylesheet">
-        <link href="/theme/css/typogrify.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+    <link href="../../theme/css/pygments/monokai.css" rel="stylesheet">
+        <link href="../../theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../theme/css/style.css" type="text/css"/>
 
 
 
@@ -51,17 +51,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="navbar-brand">
+            <a href="../../" class="navbar-brand">
 HallEffect's notes            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="/category/blog.html">Блог</a>
+                            <a href="../../category/blog.html">Блог</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Архив</span></a></li>
+              <li><a href="../../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Архив</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -77,7 +77,7 @@ HallEffect's notes            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/"
+                    <a href="../../articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/"
                        rel="bookmark"
                        title="Permalink to Шаблонный конструктор пользовательского класса исключения с переменным числом аргументов">
                         Шаблонный конструктор пользовательского класса исключения с переменным числом&nbsp;аргументов
@@ -89,14 +89,14 @@ HallEffect's notes            </a>
                     <div class="panel-body">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Wed 13 May 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср 13 Май 2015</time>
     </span>
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/python.html">Python</a>
+	<a href="../../tag/python.html">Python</a>
         /
-	<a href="/tag/boost.html">Boost</a>
+	<a href="../../tag/boost.html">Boost</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -197,7 +197,7 @@ HallEffect's notes            </a>
             var disqus_shortname = 'halleffect'; // required: replace example with your forum shortname
 
                     var disqus_identifier = 'shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov';
-                var disqus_url = '/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/';
+                var disqus_url = '../../articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/';
 
             var disqus_config = function () {
                 this.language = "ru";
@@ -229,7 +229,7 @@ HallEffect's notes            </a>
 
 
 
-            <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="../../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                 </ul>
             </li>
@@ -245,7 +245,7 @@ HallEffect's notes            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2015 Alexander Teleshov
+         <div class="col-xs-10">&copy; 2016 Alexander Teleshov
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
@@ -253,13 +253,13 @@ HallEffect's notes            </a>
       </div>
    </div>
 </footer>
-<script src="/theme/js/jquery.min.js"></script>
+<script src="../../theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/theme/js/bootstrap.min.js"></script>
+<script src="../../theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="/theme/js/respond.min.js"></script>
+<script src="../../theme/js/respond.min.js"></script>
 
     <!-- Disqus -->
     <script type="text/javascript">

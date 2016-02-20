@@ -17,17 +17,17 @@
         <meta property="og:site_name" content="HallEffect's notes" />
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="HallEffect's notes"/>
-        <meta property="og:url" content=""/>
+        <meta property="og:url" content="halleffect.github.io"/>
         <meta property="og:description" content="HallEffect's notes"/>
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
-    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="halleffect.github.io/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="halleffect.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/theme/css/pygments/monokai.css" rel="stylesheet">
-        <link href="/theme/css/typogrify.css" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+    <link href="halleffect.github.io/theme/css/pygments/monokai.css" rel="stylesheet">
+        <link href="halleffect.github.io/theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="halleffect.github.io/theme/css/style.css" type="text/css"/>
 
 
 
@@ -45,17 +45,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="navbar-brand">
+            <a href="halleffect.github.io/" class="navbar-brand">
 HallEffect's notes            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
-                            <a href="/category/blog.html">Блог</a>
+                            <a href="halleffect.github.io/category/blog.html">Блог</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Архив</span></a></li>
+              <li><a href="halleffect.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Архив</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -68,63 +68,18 @@ HallEffect's notes            </a>
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="/articles/preobrazovanie-stdvector-v-list-i-naoborot-c-ispolzovaniem-boostpython/">Преобразование std::vector в list и наоборот c использованием&nbsp;Boost.Python</a></h2>
+                <h2><a href="halleffect.github.io/articles/sborka-boostpython-s-pomoshchiu-mingw/">Сборка Boost.python с помощью&nbsp;MinGW</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Wed 13 May 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Ср 13 Май 2015</time>
     </span>
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/python.html">Python</a>
+	<a href="halleffect.github.io/tag/python.html">Python</a>
         /
-	<a href="/tag/boost.html">Boost</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Конвертер для преобразования из std::vector в&nbsp;list</p>
-<div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-<span class="k">struct</span> <span class="n">cppvector_to_list</span>
-<span class="p">{</span>
-    <span class="k">static</span> <span class="n">PyObject</span> <span class="o">*</span><span class="n">convert</span><span class="p">(</span> <span class="n">T</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">v</span> <span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">boost</span><span class="o">::</span><span class="n">python</span><span class="o">::</span><span class="n">list</span> <span class="n">list</span><span class="p">;</span>
-
-        <span class="k">for</span> <span class="p">(</span> <span class="k">auto</span> <span class="k">const</span> <span class="o">&amp;</span><span class="nl">it</span> <span class="p">:</span> <span class="n">v</span> <span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">list</span><span class="p">.</span><span class="n">append</span><span class="p">(</span> <span class="o">*</span><span class="n">it</span> <span class="p">);</span>
-        <span class="p">}</span>
-
-        <span class="k">return</span> <span class="n">incref</span><span class="p">(</span> <span class="n">list</span><span class="p">.</span><span class="n">ptr</span><span class="p">()</span> <span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</pre></div>
-
-
-<p>Конвертер для преобразования из list в&nbsp;std::vector</p>
-<div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="n">T</span> <span class="o">&gt;</span>
-<span class="k">struct</span> <span class="n">list_to_cppvector</span>
-<span class="p">{</span>
-    <span class="n">list_to_cppvector</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">converter ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="/articles/preobrazovanie-stdvector-v-list-i-naoborot-c-ispolzovaniem-boostpython/">Читать далее ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/articles/sborka-boostpython-s-pomoshchiu-mingw/">Сборка Boost.python с помощью&nbsp;MinGW</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Wed 13 May 2015</time>
-    </span>
-
-
-<span class="label label-default">Tags</span>
-	<a href="/tag/python.html">Python</a>
-        /
-	<a href="/tag/boost.html">Boost</a>
+	<a href="halleffect.github.io/tag/boost.html">Boost</a>
     
 </footer><!-- /.post-info -->                    </div>
                 <div class="summary"><ul>
@@ -146,55 +101,7 @@ HallEffect's notes            </a>
 </ul>
 <p>Для сборки x64 нужно использовать ключ <code>address-model=64</code></p>
 <div class="highlight"><pre><span></span>b2 toolset=gcc --build-type=complete address-model ...</pre></div>
-                    <a class="btn btn-default btn-xs" href="/articles/sborka-boostpython-s-pomoshchiu-mingw/">Читать далее ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/">Шаблонный конструктор пользовательского класса исключения с переменным числом&nbsp;аргументов</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-05-13T00:00:00+03:00"> Wed 13 May 2015</time>
-    </span>
-
-
-<span class="label label-default">Tags</span>
-	<a href="/tag/python.html">Python</a>
-        /
-	<a href="/tag/boost.html">Boost</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Author: Alexander&nbsp;Teleshov</p>
-<div class="highlight"><pre><span></span><span class="cp">#ifndef MYEXCEPTION_H_</span>
-<span class="cp">#define MYEXCEPTION_H_</span>
-
-<span class="cp">#include</span> <span class="cpf">&lt;exception&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;sstream&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;tuple&gt;</span><span class="cp"></span>
-
-<span class="k">class</span> <span class="nc">MyException</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span>
-<span class="p">{</span>
-
-<span class="k">public</span><span class="o">:</span>
-    <span class="n">MyException</span><span class="p">()</span><span class="o">:</span> <span class="n">m_msg</span><span class="p">(</span><span class="s">&quot;Ошибка&quot;</span><span class="p">)</span>
-    <span class="p">{</span>
-
-    <span class="p">}</span>
-
-    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="p">...</span><span class="n">Args</span><span class="o">&gt;</span> <span class="n">MyException</span><span class="p">(</span><span class="n">Args</span><span class="p">...</span> <span class="n">message</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_msg</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">auto</span> <span class="n">tp</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_tuple</span><span class="p">(</span><span class="n">message</span><span class="p">...);</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">ss</span><span class="p">;</span>
-        <span class="n">ss</span> <span class="o">&lt;&lt;</span> <span class="n">tp</span><span class="p">;</span>
-        <span class="n">m_msg</span> <span class="o">=</span> <span class="n">ss</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
-    <span class="p">}</span>
-
-    <span class="o">~</span><span class="n">MyException</span><span class="p">()</span> <span class="k">throw</span><span class="p">()</span> <span class="p">{}</span>
-
-    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">what</span><span class="p">()</span> <span class="k">const ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="/articles/shablonnyi-konstruktor-polzovatelskogo-klassa-iskliucheniia-s-peremennym-chislom-argumentov/">Читать далее ...</a>
+                    <a class="btn btn-default btn-xs" href="halleffect.github.io/articles/sborka-boostpython-s-pomoshchiu-mingw/">Читать далее ...</a>
                 </div>
             </article>
             <hr/>
@@ -208,10 +115,6 @@ HallEffect's notes            </a>
 
 
 
-            <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
-                <ul class="list-group " id="tags">
-                </ul>
-            </li>
 
 
     </ul>
@@ -232,13 +135,13 @@ HallEffect's notes            </a>
       </div>
    </div>
 </footer>
-<script src="/theme/js/jquery.min.js"></script>
+<script src="halleffect.github.io/theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/theme/js/bootstrap.min.js"></script>
+<script src="halleffect.github.io/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="/theme/js/respond.min.js"></script>
+<script src="halleffect.github.io/theme/js/respond.min.js"></script>
 
     <!-- Disqus -->
     <script type="text/javascript">

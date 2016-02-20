@@ -2,8 +2,7 @@ Title: Шаблонный конструктор пользовательско�
 Date: 2015-05-13
 Category: Блог
 Tags: Python, Boost
-
-Author: Alexander Teleshov
+Status: draft
 
 ```cpp
 #ifndef MYEXCEPTION_H_
