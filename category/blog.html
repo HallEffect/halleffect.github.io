@@ -68,6 +68,42 @@ HallEffect's notes            </a>
         <div class="col-sm-9">
 
             <article>
+                <h2><a href="/articles/inno_setup_howto/">Полезности по работе с Inno&nbsp;Setup</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-02-21T00:00:00+03:00"> Вс 21 Февраль 2016</time>
+    </span>
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/inno-setup.html">Inno setup</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><h3>Запуск .msi инсталлятора после&nbsp;установки:</h3>
+<div class="highlight"><pre><span></span>[Files]
+Source: &quot;Your-MSI-File.msi&quot;; DestDir: &quot;{tmp}&quot;
+
+[Run]
+Filename: &quot;msiexec.exe&quot;; Parameters: &quot;/i &quot;&quot;{tmp}\Your-MSI-File.msi&quot;&quot;&quot;
+</pre></div>
+
+
+<h3>Изменение баннера слева и картинки в правом верхнем углу&nbsp;инсталлятора:</h3>
+<div class="highlight"><pre><span></span>WizardImageFile=logo_big.bmp
+WizardSmallImageFile=logo.bmp
+</pre></div>
+
+
+<p>Требовая к&nbsp;картинкам:</p>
+<ul>
+<li>Размер баннера: 164x314 px, 256&nbsp;цветов</li>
+<li>Размер картинки: 55x58 px, 256 ...</li></ul>
+                    <a class="btn btn-default btn-xs" href="/articles/inno_setup_howto/">Читать далее ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="/articles/perenapravlenie-komandy-print-v-python-posylka-signala-v-pyqt/">Перенаправление команды print в Python - посылка сигнала в&nbsp;PyQt</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">

@@ -1,16 +1,8 @@
-Title: Трюки Inno_setup
-Date: 2016-05-13
+Title: Полезности по работе с Inno Setup
+Date: 2016-02-21
 Tags: Inno setup
 Category: Блог
 slug: inno_setup_howto
-Status: draft
-
-##Содержание
-
-- [Запуск .msi инсталлятора после установки](#msi)
-- [Изменение баннера слева и картинки в правом верхнем углу инсталлятора](#_2)
-- [Проверка установки Python и получение его каталога установки](#Python)
-
 
 ###Запуск .msi инсталлятора после установки:
 ```html
@@ -39,16 +31,13 @@ function GetDefRoot(Param: String): String;
 var path:String;
 
 begin
-
     // Проверяем путь установки Python для x64 машины
     if RegQueryStringValue(HKEY_LOCAL_MACHINE, 'SOFTWARE\Wow6432Node\Python\PythonCore\2.7\InstallPath', '',path) then
     begin
         Result := path;
     end
-
     else
     begin
-
         // Проверяем путь установки Python для x32 машины
         if RegQueryStringValue(HKEY_LOCAL_MACHINE, 'SOFTWARE\Python\PythonCore\2.7\InstallPath', '',path) then
         begin
