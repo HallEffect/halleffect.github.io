@@ -4,70 +4,70 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>halleffect.github.io/</loc>
-<lastmod>2016-04-02T00:24:05-00:00</lastmod>
+<loc>http://halleffect.github.io/</loc>
+<lastmod>2016-04-02T00:31:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/archives.html</loc>
-<lastmod>2016-04-02T00:24:05-00:00</lastmod>
+<loc>http://halleffect.github.io/archives.html</loc>
+<lastmod>2016-04-02T00:31:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/tags.html</loc>
-<lastmod>2016-04-02T00:24:05-00:00</lastmod>
+<loc>http://halleffect.github.io/tags.html</loc>
+<lastmod>2016-04-02T00:31:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/categories.html</loc>
-<lastmod>2016-04-02T00:24:05-00:00</lastmod>
+<loc>http://halleffect.github.io/categories.html</loc>
+<lastmod>2016-04-02T00:31:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/articles/create_catalogue_tree/</loc>
+<loc>http://halleffect.github.io/articles/create_catalogue_tree/</loc>
 <lastmod>2016-03-31T00:00:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/articles/inno_setup_howto/</loc>
+<loc>http://halleffect.github.io/articles/inno_setup_howto/</loc>
 <lastmod>2016-02-21T00:00:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/articles/perenapravlenie-komandy-print-v-python-posylka-signala-v-pyqt/</loc>
+<loc>http://halleffect.github.io/articles/perenapravlenie-komandy-print-v-python-posylka-signala-v-pyqt/</loc>
 <lastmod>2016-02-20T00:00:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/articles/sborka-boostpython-s-pomoshchiu-mingw/</loc>
+<loc>http://halleffect.github.io/articles/sborka-boostpython-s-pomoshchiu-mingw/</loc>
 <lastmod>2015-05-13T00:00:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/category/blog.html</loc>
+<loc>http://halleffect.github.io/category/blog.html</loc>
 <lastmod>2016-03-31T00:00:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>halleffect.github.io/author/alexander-teleshov.html</loc>
+<loc>http://halleffect.github.io/author/alexander-teleshov.html</loc>
 <lastmod>2016-03-31T00:00:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
