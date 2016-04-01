@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /tag
+Disallow: /content/
+Disallow: /drafts/
+Disallow: /theme/
+
+Sitemap: http://halleffect.github.io//sitemap.xml
+Host: http://halleffect.github.io/
