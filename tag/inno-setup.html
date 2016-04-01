@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Inno setup - HallEffect's notes</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <meta name="author" content="Alexander Teleshov" />
+    <meta name="keywords" content="Inno setup" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="HallEffect's notes" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="HallEffect's notes"/>
+        <meta property="og:url" content="http://halleffect.github.io"/>
+        <meta property="og:description" content="HallEffect's notes"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://halleffect.github.io/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="http://halleffect.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://halleffect.github.io/theme/css/pygments/monokai.css" rel="stylesheet">
+        <link href="http://halleffect.github.io/theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://halleffect.github.io/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://halleffect.github.io/" class="navbar-brand">
+HallEffect's notes            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="http://halleffect.github.io/category/blog.html">Блог</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://halleffect.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Архив</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+            <article>
+                <h2><a href="http://halleffect.github.io/articles/inno_setup_howto/">Полезности по работе с Inno&nbsp;Setup</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-02-21T00:00:00+03:00"> Вс 21 Февраль 2016</time>
+    </span>
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://halleffect.github.io/tag/inno-setup.html">Inno setup</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><h3>Запуск .msi инсталлятора после&nbsp;установки:</h3>
+<div class="highlight"><pre><span></span>[Files]
+Source: &quot;Your-MSI-File.msi&quot;; DestDir: &quot;{tmp}&quot;
+
+[Run]
+Filename: &quot;msiexec.exe&quot;; Parameters: &quot;/i &quot;&quot;{tmp}\Your-MSI-File.msi&quot;&quot;&quot;
+</pre></div>
+
+
+<h3>Изменение баннера слева и картинки в правом верхнем углу&nbsp;инсталлятора:</h3>
+<div class="highlight"><pre><span></span>WizardImageFile=logo_big.bmp
+WizardSmallImageFile=logo.bmp
+</pre></div>
+
+
+<p>Требовая к&nbsp;картинкам:</p>
+<ul>
+<li>Размер баннера: 164x314 px, 256&nbsp;цветов</li>
+<li>Размер картинки: 55x58 px, 256 ...</li></ul>
+                    <a class="btn btn-default btn-xs" href="http://halleffect.github.io/articles/inno_setup_howto/">Читать далее ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+
+
+
+
+
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2016 Alexander Teleshov
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://halleffect.github.io/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://halleffect.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://halleffect.github.io/theme/js/respond.min.js"></script>
+
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'halleffect'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
+
+
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter30274902 = new Ya.Metrika({id:30274902, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/30274902" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+
+
+</body>
+</html>
